@@ -1,3 +1,5 @@
 # LeetCode
 LeetCode Solutions
-This repositery contains the questions i've done and targetting 500Qs.
+This repositery contains the Solutions
+Of the Questions i've done
+Target 500Qs.
