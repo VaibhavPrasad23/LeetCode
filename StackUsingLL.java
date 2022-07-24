@@ -1,6 +1,6 @@
 //{ Driver Code Starts
 import java.util.*;
-
+//about
 class StackNode {
     int data;
     StackNode next;
