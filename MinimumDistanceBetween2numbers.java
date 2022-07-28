@@ -28,29 +28,25 @@ class GFG{
 // User function Template for Java
 
 class Solution {
-    int minDist(int a[], int n, int x, int y) {
-       //setting up default values
-    int firstindex=-1,secindex=-1,min_dist=INT_MAX;
-    
-      for(int i=0;i<n;i++){
-          if(a[i]==x){
-              firstindex=i;//storing firstindex
-          }
-          if(a[i]==y){
-              secondindex=i;//storing secondindex
-          }
-          if(firstindex!=-1 && secindex=-1){
-              //storing min distance 
-              min_dist=min(min_dist,abs(firstindex-secondindex));
-          }
-      }
-      
-      //if anyindex not found then return -1
-      if(firstindex==-1 || secondindex==-1){
-          return -1;
-      }
-      else{
-          return min_dist;  //ans
-      }
-    }
+  int minDist(int a[], int n, int x, int y) {
+       // code here
+       int minDis = n;
+       int start = -1;
+       int end = -1;
+       for(int i = 0 ; i < n ; i++){
+           if(a[i] == x){
+               start = i;
+           }
+           if(a[i] == y){
+               end = i;
+           }
+           if(start != -1 && end != -1){
+               minDis = Math.min(minDis,Math.abs(end-start));
+           }
+       }
+       if(start == -1 || end == -1){
+           return -1;
+       }
+       return minDis;
    }
+}
